@@ -19,6 +19,9 @@ def api_root(request, format=None):
 def codespace_suffix(request):
     return JsonResponse({"suffix": "-api"})
 
+def solid_lamp_suffix(request):
+    return JsonResponse({"suffix": "solid-lamp-76qwrw7559hr457"})
+
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
