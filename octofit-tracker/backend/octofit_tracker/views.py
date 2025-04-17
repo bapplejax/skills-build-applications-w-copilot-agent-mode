@@ -4,6 +4,7 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.urls import reverse
+from django.http import JsonResponse
 
 @api_view(['GET'])
 def api_root(request, format=None):
@@ -14,6 +15,9 @@ def api_root(request, format=None):
         'leaderboard': reverse('leaderboard-list', request=request, format=format),
         'workouts': reverse('workout-list', request=request, format=format),
     })
+
+def codespace_suffix(request):
+    return JsonResponse({"suffix": "-api"})
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
