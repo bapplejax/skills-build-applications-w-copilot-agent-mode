@@ -1,3 +1,12 @@
+/* General styles */
+body {
+  font-family: 'Press Start 2P', cursive; /* Retro pixel font */
+  background: linear-gradient(135deg, #ff00ff, #00ffff); /* Neon gradient background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Navigation styles */
+nav {
+  background: linear-gradient(90deg, #ff1493, #1e90ff); /* Neon pink to blue gradient */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffff00; /* Neon yellow text */
+  text-shadow: 0 0 5px #ffff00, 0 0 10px #ff00ff; /* Neon glow effect */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff00; /* Neon green on hover */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  text-decoration: underline;
+}
+
+/* Component styles */
+h1 {
+  color: #ff4500; /* Neon orange */
+  text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347; /* Neon glow */
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Table styles */
+table {
+  width: 90%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+table th {
+  background-color: #4682b4; /* Steel blue */
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+table tr:hover {
+  background-color: #e0ffff; /* Light cyan */
+}
+
+/* Button styles */
+button {
+  background: linear-gradient(90deg, #ff00ff, #00ffff); /* Neon gradient */
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+}
+
+/* Link styles */
+a {
+  color: #4682b4; /* Steel blue */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #5a9bd4; /* Lighter steel blue */
+}
+
+/* Logo styles */
+.logo {
+  height: 40px; /* Reduced size from 60px to 40px */
+  filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #ffffff); /* Neon glow */
+}
+
+/* Add retro grid background */
+.container {
+  background: url('https://www.transparenttextures.com/patterns/black-linen.png'); /* Retro grid pattern */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
